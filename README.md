@@ -1,2 +1,2 @@
-# LPMUtil.jl
-utilities used for LPM simulations 
+# SomeUtil.jl
+Some useful generic utilities 
