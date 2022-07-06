@@ -6,12 +6,20 @@ module SomeUtil
 
     using CSV, Tables     # for reading 2D matrices from a file
     
-    # global variables 
-    export USEAGENTSJL
+    # types 
+    export AbstractExample, DummyExample
 
     # functions 
     export removefirst!, date2yearsmonths, subtract!
 
+    "A super type for all simulation examples"
+    abstract type AbstractExample end 
+
+    "Default dummy example type"
+    struct DummyExample <: AbstractExample end 
+
+    ### functions 
+    
     "remove first occurance of e in list"
     function removefirst!(list, e)
         e ∉ list ? throw(ArgumentError("element $(e) not in $(list)")) : nothing 
