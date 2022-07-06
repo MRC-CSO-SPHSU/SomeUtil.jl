@@ -1,2 +1,2 @@
 # SomeUtil.jl
-Some useful generic utilities 
+Some useful generic utilities ...
